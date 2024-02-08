@@ -75,6 +75,7 @@ int main()
             config::dirExpansion(configFile);
             if (!QFile::exists(configFile))
             {
+                delete fibCounterOBJ;
                 return 1;
             }
 
@@ -83,6 +84,7 @@ int main()
 
             if (!config::base().readFile(configFile.toStdString()))
             {
+                delete fibCounterOBJ;
                 return 1;
             }
 
