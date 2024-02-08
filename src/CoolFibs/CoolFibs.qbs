@@ -17,6 +17,8 @@ Product
     cpp.systemIncludePaths: Qt.core.cpp.includePaths
 
     files:[
-        "main.cpp"
+        "calsses/fibscounter.cpp",
+        "calsses/fibscounter.h",
+        "main.cpp",
     ]
 }
